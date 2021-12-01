@@ -1,0 +1,56 @@
+*{
+    font-family:Helvetica, Arial, sans-serif;
+}
+.container-up a{
+    background-color:  rgb(146, 184, 112);
+    text-align: center;
+    height: 170px;
+    width: 50%;
+}
+header, footer{
+    background-color: rgb(100, 61, 49);
+    color: white;
+    text-align: center;
+    height: 80px;
+    padding: 5px;
+}
+main{
+    background-color: rgb(146, 184, 112);
+    width: 50%;
+    height: 450px;
+    float: left;
+
+
+    
+}
+
+.a1{
+    background-image: url("obr.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0, 30px, 120px, 0 ;
+    font-size: 150%;
+    text-decoration: none;
+    color: black;
+    text-align: center
+}
+h1{
+    letter-spacing:20px;
+    font-size: 250%;
+}
+table, td{
+    border:2px dashed green;
+    margin: 30px;
+    padding: 20px;
+}
+.container-up {
+    display: flex;
+    flex-direction:row;
+
+}
+a{
+    flex-flow: row;
+}
+footer{
+    clear: both;
+}
