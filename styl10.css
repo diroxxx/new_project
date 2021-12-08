@@ -6,6 +6,7 @@
     text-align: center;
     height: 170px;
     width: 50%;
+    color: purple;
 }
 header, footer{
     background-color: rgb(100, 61, 49);
@@ -18,10 +19,7 @@ main{
     background-color: rgb(146, 184, 112);
     width: 50%;
     height: 450px;
-    float: left;
-
-
-    
+    float: left;  
 }
 
 .a1{
@@ -48,9 +46,7 @@ table, td{
     flex-direction:row;
 
 }
-a{
-    flex-flow: row;
-}
+
 footer{
     clear: both;
 }

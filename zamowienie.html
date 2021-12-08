@@ -20,20 +20,21 @@
         <h1>Strefa zamówienia</h1>
     </header>
     <main class="main-left">
-        
-            <form action="">
+
+  
                 <label for="">Numer kształtu</label><br>
-                <input type="number"><br>
-                <label for="">skomponuj swój kolor, podaj RGB</label><br>
+                <input type="number" id="ksztalt"><br>
+                <label for="name">skomponuj swój kolor, podaj RGB</label><br>
 
                   R:  <input type="number" name="number" id="n1">
                   G:  <input type="number" name="number" id="n2">
                   B:  <input type="number" name="number" id="n3"><br>
-                  <input type="submit" onclick="rgb()" value="Zamównie" id="sub"><br>
+                  <button  onclick="rgb()" id="sub">Zamówienie</button><br>
                   <p id="text">Twoje zamówienie</p><br>
-                  <button id="button1">kolor</button>
+                  <p id="text2"></p><br>
+                  <button id="button1">kolor</button><br>
 
-            </form>
+          
           
     </main>
 
@@ -61,5 +62,35 @@
     <footer>
         <p>Autor strony: <b>Dominik</b></p>
     </footer>
+<script>
+    function rgb(){
+
+        let ksztalt = document.getElementById('ksztalt');
+        let text = document.getElementById('text2');
+    
+        
+        if(ksztalt = 1){
+            text.innerText="Twoje zamówienie to cukierek cytryna";
+
+        } if(ksztalt = 2){
+            text.innerHTML="Twoje zamówienie to cukierek liść";
+
+        }if(ksztalt = 3){
+            text.innerHTML="Twoje zamówienie to cukierek "+ksztalt;
+
+        }else{
+            text.innerHTML="Twoje zamówienie to cukierek inny";
+
+        }
+       
+    }
+
+       
+
+
+</script>
+
+
 </body>
+
 </html>
