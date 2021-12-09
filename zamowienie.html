@@ -32,7 +32,7 @@
                   <button  onclick="rgb()" id="sub">Zamówienie</button><br>
                   <p id="text">Twoje zamówienie</p><br>
                   <p id="text2"></p><br>
-                  <button id="button1">kolor</button><br>
+                  <button id="button1" >kolor</button><br>
 
           
           
@@ -65,29 +65,36 @@
 <script>
     function rgb(){
 
-        let ksztalt = document.getElementById('ksztalt');
-        let text = document.getElementById('text2');
-    
-        
-        if(ksztalt = 1){
-            text.innerText="Twoje zamówienie to cukierek cytryna";
+        let ksztalt = document.getElementById('ksztalt').value;
+        let text = document.getElementById('text');
+        let text2 = "";
+        let kolor1 = document.getElementById('n1').value;
+        let kolor2 = document.getElementById('n2').value;
+        let kolor3 = document.getElementById('n3').value;
+        let button = document.getElementById('button1');
 
-        } if(ksztalt = 2){
-            text.innerHTML="Twoje zamówienie to cukierek liść";
+        if(ksztalt == 1){
+           text2="twoje zamówienie to cytryna";
 
-        }if(ksztalt = 3){
-            text.innerHTML="Twoje zamówienie to cukierek "+ksztalt;
+        }else if(ksztalt == 2){
+            text2="twoje zamówienie to liść";
+
+        }else if(ksztalt ==3){
+            text2="twoje zamówienie to bannan";
 
         }else{
-            text.innerHTML="Twoje zamówienie to cukierek inny";
+            text2="twoje zamówienie to inny";
 
         }
-       
+        text.innerText= text2 ;
+        button.style.backgroundColor = "rgb("+kolor1+","+kolor2+","+kolor3+")";
+
+
+
+
+        
     }
-
-       
-
-
+ 
 </script>
 
 
